@@ -65,6 +65,8 @@ app-v1/
 ## Gradle files (shape, not exact versions)
 
 > Create the project with Android Studio's **New Project → Empty Activity** wizard and keep the versions it generates. They'll be newer than anything written here. The snippets below show the *shape* to aim for.
+>
+> **As built:** the repo's build files are the source of truth. They were written by hand rather than from the wizard, and they set `jvmTarget` and `compileOptions` to Java 17 instead of using `jvmToolchain(17)`, so the build runs on Studio's bundled JDK.
 
 ### `settings.gradle.kts`
 

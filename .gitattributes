@@ -1,0 +1,4 @@
+# The repo is edited on Linux and built on Windows, so pin line endings for the wrapper scripts.
+gradlew text eol=lf
+*.bat text eol=crlf
+*.jar binary

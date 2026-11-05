@@ -6,7 +6,21 @@ The design follows **functional core, imperative shell**. App logic is written a
 
 ## Status
 
-Planning phase. App code hasn't been scaffolded yet.
+Hello World. A Compose screen shows a greeting produced by a pure function in `:core`. The task-list features in the docs aren't built yet.
+
+## Run it
+
+On the Windows host, in Android Studio:
+
+1. `git pull`, then **File → Open** and select the repo folder. Let the Gradle sync finish.
+2. If Studio asks, install **Android SDK Platform 37** through its SDK Manager prompt.
+3. Pick an emulator or connected phone and press **Run ▶**. To see the screen without a device, open `HelloScreen.kt` and use its Preview.
+
+The core tests need only a JDK, not the Android SDK, so they also run on the Linux VM:
+
+```sh
+./gradlew :core:test
+```
 
 ## Docs
 
